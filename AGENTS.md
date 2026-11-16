@@ -139,7 +139,7 @@ crypto-wiki/
 
 之後可以依照第 8 節流程新增的概念：
 
-- 技術指標：MACD、布林通道（Bollinger Bands）、成交量（Volume）
+- 技術指標：布林通道（Bollinger Bands）、成交量（Volume）
 - 合約機制：強制平倉（Liquidation）、槓桿（Leverage）、保證金（Margin）
 - 幣種介紹：以太坊（ETH）、穩定幣（Stablecoin）、Solana（SOL）
 

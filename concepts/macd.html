@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MACD 指數平滑異同移動平均線｜幣圈小百科</title>
+  <meta name="description" content="比較兩條不同週期的指數移動平均線，用來觀察價格趨勢和動能變化。">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="../index.html">幣圈小百科</a>
+      <nav class="site-nav"><a href="../index.html">所有概念</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap concept">
+    <a class="back" href="../index.html">← 回首頁</a>
+    <h1>MACD 指數平滑異同移動平均線</h1>
+    <p class="en">Moving Average Convergence Divergence</p>
+    <div class="meta">
+      <span class="tag">技術指標</span>
+      <span class="tag level">入門</span>
+      <span>更新日期：2026-11-16</span>
+    </div>
+
+    <section id="definition">
+      <h2>一句話定義</h2>
+      <p class="lead">MACD 比較反應較快和較慢的兩條均線，幫助觀察價格趨勢的力道，以及這股力道是否正在改變。</p>
+    </section>
+
+    <section id="how">
+      <h2>原理與計算</h2>
+      <p>常見設定是 12、26、9。指數移動平均（Exponential Moving Average，EMA）給近期資料較高的權重。前兩個週期用收盤價算，最後一個週期用 MACD 線的數值算。</p>
+      <div class="formula">MACD 線 = 收盤價的 12 期 EMA − 收盤價的 26 期 EMA
+訊號線 = MACD 線的 9 期 EMA
+柱狀圖數值 = MACD 線 − 訊號線</div>
+      <p>每一期對應一根 K 線。例如，日線的 12 期是 12 天，四小時線的 12 期是 12 根四小時 K 線。</p>
+      <div class="example"><strong>示意範例：</strong>若 12 期 EMA 是 105、26 期 EMA 是 101，MACD 線就是 4。若當期訊號線是 3，柱狀值就是 1。</div>
+    </section>
+
+    <section id="read">
+      <h2>怎麼解讀</h2>
+      <ul>
+        <li>MACD 線在零軸上方，代表短期均線高於長期均線，近期走勢偏強。跌到零軸下方時，兩條均線的高低關係對調。</li>
+        <li>MACD 線由下往上穿過訊號線時，柱狀值由負轉正，代表 MACD 線升到自身近期平均之上。向下交叉時，柱狀值由正轉負。</li>
+        <li>柱狀變短表示兩條線靠近。若正柱從 3 縮到 1，MACD 線仍高於訊號線，但領先幅度縮小，顯示上行動能可能轉弱。</li>
+        <li>價格創新高，MACD 線的波峰卻低於前一次，稱為頂背離（Bearish Divergence），表示這次上漲的力道可能較弱。</li>
+      </ul>
+    </section>
+
+    <section id="mistakes">
+      <h2>常見誤區</h2>
+      <div class="myth"><strong>誤區：</strong>兩條線交叉就代表價格要反轉。<br>MACD 用已經發生的價格變動來計算，交叉可能在行情走了一段後才出現。盤整時，兩條線也可能頻繁來回交叉。</div>
+      <div class="myth"><strong>誤區：</strong>MACD 線過零和柱狀值過零是同一件事。<br>MACD 線過零，對應短期與長期 EMA 交叉。柱狀值過零，對應 MACD 線與訊號線交叉。兩個事件可以發生在不同時間。</div>
+    </section>
+
+    <section id="related">
+      <h2>相關概念</h2>
+      <ul class="related">
+        <li><a href="moving-average.html">移動平均線 MA</a></li>
+        <li><a href="rsi.html">RSI 相對強弱指標</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>本站內容僅供學習參考，不構成任何投資建議。範例數字皆為示意，非真實行情。</p>
+      <p>幣圈小百科｜依 AGENTS.md 規則由 AI 協作產生</p>
+    </div>
+  </footer>
+</body>
+</html>
