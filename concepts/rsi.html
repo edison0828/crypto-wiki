@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RSI 相對強弱指標｜幣圈小百科</title>
+  <meta name="description" content="用 0 到 100 的分數，衡量最近一段時間漲勢和跌勢誰比較強。">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="../index.html">幣圈小百科</a>
+      <nav class="site-nav"><a href="../index.html">所有概念</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap concept">
+    <a class="back" href="../index.html">← 回首頁</a>
+    <h1>RSI 相對強弱指標</h1>
+    <p class="en">Relative Strength Index</p>
+    <div class="meta">
+      <span class="tag">技術指標</span>
+      <span class="tag level">入門</span>
+      <span>更新日期：2026-11-15</span>
+    </div>
+
+    <section id="definition">
+      <h2>一句話定義</h2>
+      <p class="lead">RSI 是一個介於 0 到 100 的分數，用來衡量最近一段時間內「上漲的力道」和「下跌的力道」誰比較強。</p>
+    </section>
+
+    <section id="how">
+      <h2>原理與計算</h2>
+      <p>最常用的週期是 14 根 K 線（例如 14 天）。先算出這段期間的平均漲幅與平均跌幅，再換算成分數：</p>
+      <div class="formula">RS  = 平均漲幅 ÷ 平均跌幅
+RSI = 100 − 100 ÷ (1 + RS)</div>
+      <p>如果這段期間全部都在漲，RSI 會接近 100；全部都在跌，則接近 0。</p>
+      <div class="example"><strong>示意範例：</strong>過去 14 天平均每天漲 2%、平均每天跌 1%，RS = 2，RSI = 100 − 100 ÷ 3 ≈ 66.7。</div>
+    </section>
+
+    <section id="read">
+      <h2>怎麼解讀</h2>
+      <ul>
+        <li>RSI 高於 70：通常稱為「超買」，代表近期漲勢偏強、漲得比較急。</li>
+        <li>RSI 低於 30：通常稱為「超賣」，代表近期跌勢偏強、跌得比較急。</li>
+        <li>RSI 在 50 附近：多空力道接近，沒有明顯方向。</li>
+        <li>價格創新高但 RSI 沒有跟著創新高，稱為「背離」，代表上漲力道可能在減弱。</li>
+      </ul>
+    </section>
+
+    <section id="mistakes">
+      <h2>常見誤區</h2>
+      <div class="myth"><strong>誤區：</strong>RSI 超過 70 就一定會跌。<br>強勢行情中，RSI 可以連續好幾週都維持在 70 以上。超買只是描述「漲得急」，不是反轉的保證。</div>
+      <div class="myth"><strong>誤區：</strong>RSI 的 70 和 30 是固定的標準。<br>這只是慣例。波動大的幣種，有人會改用 80 和 20，週期也可以調整。</div>
+    </section>
+
+    <section id="related">
+      <h2>相關概念</h2>
+      <ul class="related">
+        <li><a href="moving-average.html">移動平均線 MA</a></li>
+        <li><a href="volatility.html">波動率</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>本站內容僅供學習參考，不構成任何投資建議。範例數字皆為示意，非真實行情。</p>
+      <p>幣圈小百科｜依 AGENTS.md 規則由 AI 協作產生</p>
+    </div>
+  </footer>
+</body>
+</html>

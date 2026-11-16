@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>資金費率｜幣圈小百科</title>
+  <meta name="description" content="永續合約中，多方和空方定期互相支付的費用，用來讓合約價格貼近現貨價格。">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="../index.html">幣圈小百科</a>
+      <nav class="site-nav"><a href="../index.html">所有概念</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap concept">
+    <a class="back" href="../index.html">← 回首頁</a>
+    <h1>資金費率</h1>
+    <p class="en">Funding Rate</p>
+    <div class="meta">
+      <span class="tag">合約機制</span>
+      <span class="tag level">進階</span>
+      <span>更新日期：2026-11-15</span>
+    </div>
+
+    <section id="definition">
+      <h2>一句話定義</h2>
+      <p class="lead">資金費率是永續合約中，多方和空方定期互相支付的一筆費用，目的是讓合約價格不要偏離現貨價格太遠。</p>
+    </section>
+
+    <section id="how">
+      <h2>原理與計算</h2>
+      <p>永續合約沒有到期日，所以需要一個機制把合約價格拉回現貨價格。交易所會定期結算一次資金費，常見的間隔是每 8 小時：</p>
+      <ul>
+        <li>費率為正：合約價格高於現貨，<strong>多方付錢給空方</strong>。</li>
+        <li>費率為負：合約價格低於現貨，<strong>空方付錢給多方</strong>。</li>
+      </ul>
+      <div class="formula">資金費 = 持倉名目價值 × 資金費率</div>
+      <p>這筆錢是多空雙方互相支付，不是交給交易所。各交易所的結算間隔與計算細節不同，以交易所公告為準。</p>
+      <div class="example"><strong>示意範例：</strong>持有價值 10,000 USDT 的多單，資金費率是 +0.01%，這次結算要支付 10,000 × 0.01% = 1 USDT 給空方。</div>
+    </section>
+
+    <section id="read">
+      <h2>怎麼解讀</h2>
+      <ul>
+        <li>費率持續為正且偏高：做多的人多、願意付費持倉，市場情緒偏樂觀。</li>
+        <li>費率持續為負：做空的人多，市場情緒偏悲觀。</li>
+        <li>費率接近 0：多空力道接近，合約價格貼近現貨。</li>
+        <li>長期持有合約部位時，資金費會累積成一筆不小的成本或收入。</li>
+      </ul>
+    </section>
+
+    <section id="mistakes">
+      <h2>常見誤區</h2>
+      <div class="myth"><strong>誤區：</strong>資金費率是交易所收的手續費。<br>資金費是多空雙方互相支付，和交易手續費是兩筆不同的費用。</div>
+      <div class="myth"><strong>誤區：</strong>費率很高代表價格會繼續漲。<br>費率高只代表多方擁擠。過度擁擠時，價格一回落反而容易引發連環平倉。</div>
+    </section>
+
+    <section id="related">
+      <h2>相關概念</h2>
+      <ul class="related">
+        <li><a href="volatility.html">波動率</a></li>
+        <li><a href="bitcoin.html">比特幣 BTC</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>本站內容僅供學習參考，不構成任何投資建議。範例數字皆為示意，非真實行情。</p>
+      <p>幣圈小百科｜依 AGENTS.md 規則由 AI 協作產生</p>
+    </div>
+  </footer>
+</body>
+</html>

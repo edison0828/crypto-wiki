@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>幣圈小百科｜加密貨幣與技術指標</title>
+  <meta name="description" content="給新手的加密貨幣與技術指標中文小百科，一個概念一頁，五分鐘看懂。">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="index.html">幣圈小百科</a>
+      <nav class="site-nav"><a href="https://github.com/YOUR_ACCOUNT/crypto-wiki">GitHub</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>加密貨幣與技術指標小百科</h1>
+      <p>一個概念一頁，每頁都用同樣的五個段落說明：定義、原理、解讀、誤區、相關概念。五分鐘看懂一個名詞。</p>
+    </div>
+
+    <!-- 分類區塊：順序固定為 技術指標 → 合約機制 → 幣種介紹。新卡片加在所屬分類的 .cards 最後面 -->
+    <section class="category" id="indicators">
+      <h2>技術指標</h2>
+      <p>用價格和成交量算出來的數字，幫助觀察趨勢與力道。</p>
+      <div class="cards">
+        <a class="card" href="concepts/rsi.html">
+          <span class="tag level">入門</span>
+          <h3>RSI 相對強弱指標</h3>
+          <p>用 0 到 100 的分數，衡量最近一段時間漲勢和跌勢誰比較強。</p>
+        </a>
+        <a class="card" href="concepts/moving-average.html">
+          <span class="tag level">入門</span>
+          <h3>移動平均線 MA</h3>
+          <p>把最近 N 天的收盤價取平均，連成一條比較平滑的線，用來看趨勢方向。</p>
+        </a>
+        <a class="card" href="concepts/volatility.html">
+          <span class="tag level">進階</span>
+          <h3>波動率</h3>
+          <p>衡量價格上下起伏的劇烈程度，數字越大代表價格越不穩定。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="category" id="derivatives">
+      <h2>合約機制</h2>
+      <p>永續合約與槓桿交易的規則，了解成本與風險從哪裡來。</p>
+      <div class="cards">
+        <a class="card" href="concepts/funding-rate.html">
+          <span class="tag level">進階</span>
+          <h3>資金費率</h3>
+          <p>永續合約中，多方和空方定期互相支付的費用，用來讓合約價格貼近現貨價格。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="category" id="coins">
+      <h2>幣種介紹</h2>
+      <p>主要加密貨幣的背景、運作方式與特色。</p>
+      <div class="cards">
+        <a class="card" href="concepts/bitcoin.html">
+          <span class="tag level">入門</span>
+          <h3>比特幣 BTC</h3>
+          <p>第一個去中心化的加密貨幣，總量上限 2,100 萬枚，不需要銀行就能轉帳。</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>本站內容僅供學習參考，不構成任何投資建議。範例數字皆為示意，非真實行情。</p>
+      <p>幣圈小百科｜依 AGENTS.md 規則由 AI 協作產生</p>
+    </div>
+  </footer>
+</body>
+</html>

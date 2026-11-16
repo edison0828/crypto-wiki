@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>移動平均線 MA｜幣圈小百科</title>
+  <meta name="description" content="把最近 N 天的收盤價取平均，連成一條比較平滑的線，用來看趨勢方向。">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="../index.html">幣圈小百科</a>
+      <nav class="site-nav"><a href="../index.html">所有概念</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap concept">
+    <a class="back" href="../index.html">← 回首頁</a>
+    <h1>移動平均線 MA</h1>
+    <p class="en">Moving Average</p>
+    <div class="meta">
+      <span class="tag">技術指標</span>
+      <span class="tag level">入門</span>
+      <span>更新日期：2026-11-15</span>
+    </div>
+
+    <section id="definition">
+      <h2>一句話定義</h2>
+      <p class="lead">移動平均線是把最近 N 天的收盤價取平均後連成的線，可以濾掉每天的雜訊，讓趨勢方向更容易看出來。</p>
+    </section>
+
+    <section id="how">
+      <h2>原理與計算</h2>
+      <p>最基本的是簡單移動平均（SMA），每天都用最新的 N 筆收盤價重新計算一次：</p>
+      <div class="formula">MA(N) = 最近 N 天收盤價的總和 ÷ N</div>
+      <p>另一種常見的是指數移動平均（EMA），它給較新的價格較高的權重，所以對價格變化的反應比 SMA 快。常見的週期有 7、30、200 天。</p>
+      <div class="example"><strong>示意範例：</strong>最近 5 天收盤價是 100、102、104、103、106，MA(5) = 515 ÷ 5 = 103。</div>
+    </section>
+
+    <section id="read">
+      <h2>怎麼解讀</h2>
+      <ul>
+        <li>價格在均線之上：近期價格高於平均成本，趨勢偏多。</li>
+        <li>價格在均線之下：近期價格低於平均成本，趨勢偏空。</li>
+        <li>短期均線由下往上穿過長期均線，俗稱「黃金交叉」；反過來則是「死亡交叉」。</li>
+        <li>均線的斜率越陡，代表趨勢越明顯；均線走平，代表市場在盤整。</li>
+      </ul>
+    </section>
+
+    <section id="mistakes">
+      <h2>常見誤區</h2>
+      <div class="myth"><strong>誤區：</strong>黃金交叉出現就代表要上漲。<br>均線是用過去價格算出來的，天生落後。交叉出現時，行情往往已經走了一段，盤整時還會頻繁出現假訊號。</div>
+      <div class="myth"><strong>誤區：</strong>週期越短的均線越準。<br>短週期反應快但雜訊多，長週期穩定但反應慢，兩者是取捨關係，沒有哪個比較準。</div>
+    </section>
+
+    <section id="related">
+      <h2>相關概念</h2>
+      <ul class="related">
+        <li><a href="rsi.html">RSI 相對強弱指標</a></li>
+        <li><a href="volatility.html">波動率</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>本站內容僅供學習參考，不構成任何投資建議。範例數字皆為示意，非真實行情。</p>
+      <p>幣圈小百科｜依 AGENTS.md 規則由 AI 協作產生</p>
+    </div>
+  </footer>
+</body>
+</html>
